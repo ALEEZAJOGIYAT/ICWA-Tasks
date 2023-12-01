@@ -4,9 +4,10 @@ echo "Task: Automate GitHub File/Folder Upload with Bash Script:"
 source .env
 
 # Git Credentials
+#fetching these credentials from env file to keep it secured
 
-USERNAME="ALEEZAJOGIYAT"
-TOKEN=$token
+USERNAME=$USERNAME
+TOKEN=$TOKEN
 
 # Check if a commit message was provided as an argument, otherwise ask for input
 if [ -z "$1" ]; then
